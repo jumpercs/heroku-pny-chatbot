@@ -350,7 +350,7 @@ async function executeQueries(projectId, sessionId, queries, languageCode) {
 
 async function intervalFunc()  {
   const res = await axios.get('https://heroku-pny-chatbot.herokuapp.com/');
-  console.log(res.status);
+  console.log('response: '+ res.status);
 }
 
 setInterval(intervalFunc, 10000);
