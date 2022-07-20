@@ -346,3 +346,11 @@ async function executeQueries(projectId, sessionId, queries, languageCode) {
       }
   }
 }
+
+
+function intervalFunc() {
+  console.log('Cant stop me now!');
+}
+
+setInterval(intervalFunc, 5000);
+
