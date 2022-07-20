@@ -349,8 +349,9 @@ async function executeQueries(projectId, sessionId, queries, languageCode) {
 
 
 function intervalFunc() {
-  console.log('Cant stop me now!');
+  const res = await axios.get('https://heroku-pny-chatbot.herokuapp.com/');
+  console.log(res.status);
 }
 
-setInterval(intervalFunc, 5000);
+setInterval(intervalFunc, 10000);
 
