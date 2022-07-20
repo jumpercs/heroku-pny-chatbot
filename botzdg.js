@@ -348,7 +348,7 @@ async function executeQueries(projectId, sessionId, queries, languageCode) {
 }
 
 
-function intervalFunc() async {
+async function intervalFunc()  {
   const res = await axios.get('https://heroku-pny-chatbot.herokuapp.com/');
   console.log(res.status);
 }
